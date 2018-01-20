@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="#38CABD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:id="@+id/error"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/error_msg"
+        />
+
+    <TextView
+        android:id="@+id/deep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/breath"
+        android:layout_alignEnd="@+id/breath"
+        android:layout_alignRight="@+id/breath"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="casual"
+        android:shadowColor="@android:color/holo_blue_bright"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="60"
+
+        android:text="Deep."
+        android:textColor="@android:color/white"
+        android:textSize="56sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/breath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="@android:color/white"
+        android:textSize="56sp"
+        android:textStyle ="bold"
+        android:text="Breath."
+        android:layout_centerInParent="true"
+        android:paddingLeft = "144dp"
+        android:shadowColor = "@android:color/holo_blue_bright"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="60"
+
+        />
+
+    <TextView
+        android:id="@+id/gotThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle ="bold"
+        android:fontFamily="casual"
+        android:text="You've got this.\nGood luck!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+
+        />
+
+
+
+</RelativeLayout>
